@@ -1,0 +1,256 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9366,        248]
+NotebookOptionsPosition[      7456,        211]
+NotebookOutlinePosition[      7789,        226]
+CellTagsIndexPosition[      7746,        223]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Checks of the importance of box and pentagon diagrams to the SM decays of \
+Higgs to 4l\
+\>", "Title",
+ CellChangeTimes->{{3.827002521186846*^9, 
+  3.82700257786276*^9}},ExpressionUUID->"8e6c2781-10c7-4ea0-9b2b-\
+6bd09640c69c"],
+
+Cell[CellGroupData[{
+
+Cell["Key Values", "Section",
+ CellChangeTimes->{{3.827002588057097*^9, 
+  3.8270025900442247`*^9}},ExpressionUUID->"ce8765df-1a3b-47fd-8780-\
+60151874e13c"],
+
+Cell["\<\
+The Higgs total width and SM BRs are taken from appendix A of the Handbook of \
+LHC Higgs cross sections 4\
+\>", "Text",
+ CellChangeTimes->{{3.827002637925784*^9, 
+  3.827002723779162*^9}},ExpressionUUID->"fda1d51c-d73a-422d-a712-\
+c6c1fcb19fc8"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"higgsTotalWidth", " ", "=", " ", 
+    RowBox[{"4.1", " ", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "3"}], ")"}]}]}]}], " ", ";"}], 
+  RowBox[{"(*", "GeV", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"higgsTo4lBR", " ", "=", " ", 
+   RowBox[{"1.251", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "4"}], ")"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"higgsTo4eBR", " ", "=", 
+   RowBox[{"3.28", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "5"}], ")"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"higgsTo2e2muBR", " ", "=", 
+   RowBox[{"5.947", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "5"}], ")"}]}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.827002627371852*^9, 3.827002632166787*^9}, {
+  3.8270027260493393`*^9, 3.827002774649386*^9}, {3.827002821014112*^9, 
+  3.827002916423451*^9}, {3.8270030054712*^9, 3.827003008151042*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"8e94c1a1-c85c-4ee7-a21a-caf75085bdd7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"higgsTo2e2muWidth", " ", "=", " ", 
+   RowBox[{"higgsTotalWidth", "*", "higgsTo2e2muBR"}]}], " ", 
+  RowBox[{"(*", "GeV", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"higgsTo4eWidth", " ", "=", " ", 
+   RowBox[{"higgsTotalWidth", "*", "higgsTo4eBR"}]}], " ", 
+  RowBox[{"(*", "GeV", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"higgsTo4lWidth", " ", "=", " ", 
+  RowBox[{"higgsTotalWidth", "*", "higgsTo4lBR", " ", 
+   RowBox[{"(*", "GeV", "*)"}]}]}]}], "Input",
+ CellChangeTimes->{{3.827002998239005*^9, 3.827003039866251*^9}, {
+  3.8270031312429037`*^9, 3.827003233288886*^9}, {3.82719480141768*^9, 
+  3.827194806846663*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"f71becf4-dafe-4e8d-9799-1de5f3f9833e"],
+
+Cell[BoxData["2.43827`*^-7"], "Output",
+ CellChangeTimes->{3.827194817155303*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"6954de8c-1bfc-4071-8125-545beada912d"],
+
+Cell[BoxData["1.3447999999999997`*^-7"], "Output",
+ CellChangeTimes->{3.8271948171589813`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"18d2a95d-e096-4597-be32-eeebe863fcc4"],
+
+Cell[BoxData["5.1291`*^-7"], "Output",
+ CellChangeTimes->{3.82719481716518*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"90e28b35-a3a7-4813-b29c-6717711ece71"]
+}, Open  ]],
+
+Cell["Calculated values using MG5", "Text",
+ CellChangeTimes->{{3.827003237461009*^9, 
+  3.827003249815589*^9}},ExpressionUUID->"09269564-da62-469e-9efe-\
+80fbaceefeab"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"higgsTo2e2muWidthMG", " ", "=", " ", 
+    RowBox[{"2.527", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "7"}], ")"}]}]}]}], ";"}], 
+  RowBox[{"(*", "GeV", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"higgsTo4eWidthMG", " ", "=", " ", 
+    RowBox[{"1.391", "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "7"}], ")"}]}]}]}], ";"}], 
+  RowBox[{"(*", "GeV", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"higgsTo4lWidthMG", " ", "=", " ", "0"}], " ", ";"}], 
+  RowBox[{"(*", "GeV", "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.8270032974022207`*^9, 3.827003344109324*^9}, {
+  3.827005479292725*^9, 3.827005487181315*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"86970dc3-928c-46e1-acd7-7221c53ef1bd"],
+
+Cell["Tree level values using MG5", "Text",
+ CellChangeTimes->{{3.827244767853219*^9, 
+  3.827244778923012*^9}},ExpressionUUID->"77c6c03c-b8f9-43e3-95df-\
+adffeded7b86"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"higgsTo2e2muWidthMGTree", " ", "=", " ", 
+   RowBox[{"2.177", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "7"}], ")"}]}]}]}], ";", 
+  RowBox[{"(*", "GeV", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"higgsTo4eWidthMGTree", " ", "=", " ", 
+   RowBox[{"1.198", "*", 
+    RowBox[{"10", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "7"}], ")"}]}]}]}], ";", 
+  RowBox[{"(*", "GeV", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"higgsTo4lWidthMG", " ", "=", " ", "0"}], " ", ";", 
+  RowBox[{"(*", "GeV", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.827244794782899*^9, 3.827244797229045*^9}, {
+  3.827244831435577*^9, 3.827244834288672*^9}, {3.8272452461117487`*^9, 
+  3.827245247997459*^9}},ExpressionUUID->"47492e1f-e8af-4185-95a4-\
+316ce8c0d850"],
+
+Cell["Check percent difference", "Text",
+ CellChangeTimes->{{3.827003352290011*^9, 3.827003355803256*^9}, {
+  3.8270033960454893`*^9, 
+  3.827003398415554*^9}},ExpressionUUID->"208bf8c6-ceaa-4ca7-9326-\
+60b784c469f8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"diff2e2mu", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Abs", "[", 
+    RowBox[{"higgsTo2e2muWidth", "-", "higgsTo2e2muWidthMG"}], "]"}], "/", 
+   "higgsTo2e2muWidth"}]}], "\[IndentingNewLine]", 
+ RowBox[{"diff4e", "=", " ", 
+  RowBox[{
+   RowBox[{"Abs", "[", 
+    RowBox[{"higgsTo4eWidth", "-", "higgsTo4eWidthMG"}], "]"}], "/", 
+   "higgsTo4eWidth"}]}], "\[IndentingNewLine]", 
+ RowBox[{"diff4l", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Abs", "[", 
+    RowBox[{"higgsTo4lWidth", "-", "higgsTo4lWidthMG"}], "]"}], "/", 
+   "higgsTo4lWidth"}]}]}], "Input",
+ CellChangeTimes->{{3.827003403026836*^9, 3.827003448665029*^9}, {
+  3.8270034819092417`*^9, 3.8270035328275948`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"9f65dc04-53a0-4952-8dab-d6a9e0ea7a0a"],
+
+Cell[BoxData["0.03639055559884662`"], "Output",
+ CellChangeTimes->{3.82700345201958*^9, 3.827003487234829*^9, 
+  3.8270035334401293`*^9, 3.827005490574009*^9, 3.827194817221273*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"09fcd75c-bfd9-46bb-a01a-45d5005fa150"],
+
+Cell[BoxData["0.03435455086258198`"], "Output",
+ CellChangeTimes->{3.82700345201958*^9, 3.827003487234829*^9, 
+  3.8270035334401293`*^9, 3.827005490574009*^9, 3.827194817223812*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"d6760a26-ed97-40d3-af57-b3d18d50a465"],
+
+Cell[BoxData["1.`"], "Output",
+ CellChangeTimes->{3.82700345201958*^9, 3.827003487234829*^9, 
+  3.8270035334401293`*^9, 3.827005490574009*^9, 3.8271948172256107`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"870c8752-ba6f-413b-9c3d-efb685fe6d75"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1294, 704},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 237, 6, 162, "Title",ExpressionUUID->"8e6c2781-10c7-4ea0-9b2b-6bd09640c69c"],
+Cell[CellGroupData[{
+Cell[842, 32, 157, 3, 68, "Section",ExpressionUUID->"ce8765df-1a3b-47fd-8780-60151874e13c"],
+Cell[1002, 37, 256, 6, 36, "Text",ExpressionUUID->"fda1d51c-d73a-422d-a712-c6c1fcb19fc8"],
+Cell[1261, 45, 1103, 30, 101, "Input",ExpressionUUID->"8e94c1a1-c85c-4ee7-a21a-caf75085bdd7"],
+Cell[CellGroupData[{
+Cell[2389, 79, 750, 15, 78, "Input",ExpressionUUID->"f71becf4-dafe-4e8d-9799-1de5f3f9833e"],
+Cell[3142, 96, 159, 2, 37, "Output",ExpressionUUID->"6954de8c-1bfc-4071-8125-545beada912d"],
+Cell[3304, 100, 172, 2, 37, "Output",ExpressionUUID->"18d2a95d-e096-4597-be32-eeebe863fcc4"],
+Cell[3479, 104, 157, 2, 37, "Output",ExpressionUUID->"90e28b35-a3a7-4813-b29c-6717711ece71"]
+}, Open  ]],
+Cell[3651, 109, 169, 3, 36, "Text",ExpressionUUID->"09269564-da62-469e-9efe-80fbaceefeab"],
+Cell[3823, 114, 833, 23, 78, "Input",ExpressionUUID->"86970dc3-928c-46e1-acd7-7221c53ef1bd"],
+Cell[4659, 139, 169, 3, 36, "Text",ExpressionUUID->"77c6c03c-b8f9-43e3-95df-adffeded7b86"],
+Cell[4831, 144, 793, 19, 101, "Input",ExpressionUUID->"47492e1f-e8af-4185-95a4-316ce8c0d850"],
+Cell[5627, 165, 217, 4, 36, "Text",ExpressionUUID->"208bf8c6-ceaa-4ca7-9326-60b784c469f8"],
+Cell[CellGroupData[{
+Cell[5869, 173, 773, 18, 78, "Input",ExpressionUUID->"9f65dc04-53a0-4952-8dab-d6a9e0ea7a0a"],
+Cell[6645, 193, 260, 3, 35, "Output",ExpressionUUID->"09fcd75c-bfd9-46bb-a01a-45d5005fa150"],
+Cell[6908, 198, 260, 3, 35, "Output",ExpressionUUID->"d6760a26-ed97-40d3-af57-b3d18d50a465"],
+Cell[7171, 203, 245, 3, 35, "Output",ExpressionUUID->"870c8752-ba6f-413b-9c3d-efb685fe6d75"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
